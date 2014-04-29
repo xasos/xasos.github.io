@@ -1,4 +1,4 @@
-xasos.github..io
+xasos.github.io
 ================
 
-Personal Website for testing.
+Personal Website.
