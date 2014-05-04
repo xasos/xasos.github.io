@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Codeucate: Coming Soon!</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+
+  <style>
+    html,body{height: 100%;}
+    *{padding:0;margin:0;font-family:"Roboto";color:black;font-size:30px;border-radius:2px;}
+    h1{font-size:70px;font-family:"Roboto";font-weight:300;letter-spacing:3px;}
+    small {font-size:30px; font-weight: 300}
+
+  table {background: url(bg.png) no-repeat fixed; background-size:cover; width:100%;height:100%;vertical-align:middle;text-align:center; } 
+   .logo {width:800px}
+   @media (max-width: 500px) {
+    .logo {
+      width: 100%
+    }
+    h1 {font-size: 50px}
+    small {font-size: 20px}
+  }
+  @media (max-width: 800px) and (min-width:500px) {
+   .logo {
+      width: 100%;
+    }
+    h1 {font-size: 60px}
+    small {font-size: 25px}
+    #content {position:relative}
+  script {display:none!important}
+
+    .container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+.fill {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  top: 5%;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+.border {
+  border: 2px dashed #00FFAA;
+}
+
+.aspect {
+  opacity: 0.2;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.15;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+
+.layer:nth-child(2) {
+  opacity: 0.30;
+}
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg);
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg);
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg);
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+.layer:nth-child(5) button {
+  -webkit-transform: rotate(30deg);
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
+.layer:nth-child(6) button {
+}
+
+  
+    </style>
+
+</head>
+<body>
+  <div id="container" class="container">
+    <ul id="scene" class="scene">
+      <li class="layer" data-depth="1.00"><img src="logo.png"></li>
+      <li class="layer" data-depth="1.00"><h1>Coming Soon</h1></li>
+      <li class="layer" data-depth="1.00"><small>Codeucate will be launching shortly.</small></li>
+      <li class="layer" data-depth="1.00"><img src="bg.png"></li>
+    </ul>
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="scripts/jquery.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script>
+  var bg = $("#bg");
+  var photo = $("#photo");
+  var content = $("#content");
+  TweenLite.from (bg, 1.0, {opacity:0});
+  TweenLite.from (photo, 1.5, {opacity:0, width:"80%", delay:1.5});
+  TweenLite.from (content, 1.5, {top:"100px", opacity:0, delay: 1.5});
+  </script>
+
+  <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.parallax.js"></script>
+    <script>
+    $('#scene').parallax();
+    </script>
+
+</body>
+</html>
