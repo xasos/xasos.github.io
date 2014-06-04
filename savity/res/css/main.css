@@ -1,0 +1,123 @@
+body {
+
+	color: #000;
+	background-color: #fff;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #fff;
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now for the proper property */
+   transition:color .2s ease-out;
+  text-decoration: none;
+}
+img {
+	max-width: 90%;
+	text-align: center;
+}
+
+
+
+
+/*00000000000 Navigation 0000000000*/
+header {
+	border-bottom: 5px solid #919096;
+    background: #000;
+    width: 100%;
+    color:#fff; 
+    text-decoration: none; 
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+
+}
+
+
+#firstCol, #secondCol{
+	float:left;
+	display: inline-block;
+}
+
+#firstCol {
+	margin: 0 20px 0 0;
+}
+
+nav ul li {
+	text-align: center;
+	list-style: none;
+}
+
+nav ul li a {
+
+	color: #fff;
+}
+
+nav ul li a:hover {
+	color: #ccc;
+}
+
+nav ul li {
+}
+
+
+
+
+/*the central body*/
+#main-body section ul {
+	list-style: none;
+}
+
+#main-body {
+	margin-top: 150px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#main-body img {
+	border:3px solid #021a40;
+}
+
+
+/*THE ABOUT PAGE*/
+#about p {
+	text-align: center;
+}
+
+
+/*The FOOTER*/
+footer ul{
+	list-style: none;
+	display: inline-block;
+
+}
+
+footer ul li {
+	width: 20px 20px;
+	height: auto;
+	float: left;
+}
+
+
+
+footer {
+	background: #000;
+	height: 10%;
+    width: 100%;
+    color:#fff; 
+    text-decoration: none; 
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+
+}
+
+footer h1 {
+	font-size: 1.75em;
+}
+
