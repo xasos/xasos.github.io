@@ -1,4 +1,0 @@
-SavityWebsite
-=============
-
-Website for savity
