@@ -2,12 +2,6 @@
 
 @font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
 
-/*
-	Astral 2.5 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -66,14 +60,14 @@
 			background: url('images/overlay.png');
 			z-index: -1;
 		}
-	
+
 	body, input, textarea
 	{
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Roboto Slab', serif;
 		font-weight: 300;
 		color: #777;
 	}
-	
+
 	strong, b
 	{
 		font-weight: 400;
@@ -85,19 +79,19 @@
 		font-weight: 400;
 		color: #363636;
 	}
-	
+
 	blockquote
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-	
+
 	em, i
 	{
 		font-style: italic;
 	}
-	
+
 	hr
 	{
 		border: 0;
@@ -105,59 +99,59 @@
 		padding: 1.5em 0 0 0;
 		margin: 1.75em 0 0 0;
 	}
-	
+
 	sub
 	{
 		position: relative;
 		top: 0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	sup
 	{
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	table
 	{
 		width: 100%;
 	}
-	
+
 	table.style1
 	{
 		width: 100%;
 	}
-	
+
 		table.style1 tbody tr:nth-child(2n+2)
 		{
 			background: #f4f4f4;
 		}
-		
+
 		table.style1 td
 		{
 			padding: 0.5em 1em 0.5em 1em;
 		}
-		
+
 		table.style1 th
 		{
 			text-align: left;
 			font-weight: 400;
 			padding: 0.5em 1em 0.5em 1em;
 		}
-	
+
 		table.style1 thead
 		{
 			background: #222222;
 			color: #fff;
 		}
-		
+
 		table.style1 tfoot
 		{
 			background: #eee;
 		}
-		
+
 		table.style1 tbody
 		{
 		}
@@ -165,7 +159,7 @@
 	form
 	{
 	}
-	
+
 		form input.text,
 		form select,
 		form textarea
@@ -183,12 +177,12 @@
 		{
 			-webkit-appearance: none;
 		}
-		
+
 		form textarea
 		{
 			height: 15em;
 		}
-		
+
 		form input:focus,
 		form select:focus,
 		form textarea:focus
@@ -214,24 +208,24 @@
 		form :-ms-input-placeholder
 		{
 			color: #999;
-		}		
+		}
 
 	br.clear
 	{
 		clear: both;
 	}
-	
+
 	p, ul, ol, dl, table, blockquote, form
 	{
 		margin-bottom: 2em;
 	}
-	
+
 	section,
 	article
 	{
 		margin-bottom: 3em;
 	}
-	
+
 	section > :last-child,
 	article > :last-child
 	{
@@ -248,7 +242,7 @@
 	{
 		display: inline-block;
 	}
-	
+
 		.image img
 		{
 			display: block;
@@ -261,13 +255,13 @@
 		width: 100%;
 		margin: 0 0 2em 0;
 	}
-	
+
 	.image-left
 	{
 		float: left;
 		margin: 0 2em 2em 0;
 	}
-	
+
 	.image-centered
 	{
 		display: block;
@@ -279,7 +273,7 @@
 			margin: 0 auto;
 			width: auto;
 		}
-		
+
 	.button
 	{
 		display: inline-block;
@@ -299,12 +293,12 @@
 		{
 			background-color: #333333;
 		}
-		
+
 		.button:active
 		{
 			background-color: #444444;
 		}
-	
+
 		.button-alt
 		{
 			background-color: #777777;
@@ -314,20 +308,20 @@
 			{
 				background-color: #888888;
 			}
-			
+
 			.button-alt:active
 			{
 				background-color: #999999;
 			}
-	
+
 		.button-small
 		{
 		}
-		
+
 		.button-big
 		{
 		}
-		
+
 		.button-huge
 		{
 		}
@@ -337,16 +331,16 @@
 		list-style: disc;
 		padding-left: 1em;
 	}
-	
+
 		ul.style1 li
 		{
 			padding-left: 0.5em;
 		}
-	
+
 	ul.links
 	{
 	}
-	
+
 		ul.links li
 		{
 			display: inline-block;
@@ -358,12 +352,12 @@
 				content: '\2022';
 				opacity: 0.5;
 			}
-		
+
 			ul.links li:first-child:before
 			{
 				display: none;
 			}
-		
+
 	ol.style1
 	{
 		list-style: decimal;
@@ -380,7 +374,7 @@
 		display: block;
 		color: #aaa;
 	}
-	
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
@@ -395,7 +389,7 @@
 		.fa.solo
 		{
 		}
-		
+
 			.fa.solo span
 			{
 				display: none;
@@ -808,15 +802,15 @@
 		.fa-wheelchair:before{content:"\f193"}
 		.fa-vimeo-square:before{content:"\f194"}
 		.fa-turkish-lira:before,.fa-try:before{content:"\f195"}
-		
+
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
-	
+
 	#nav
 	{
 	}
-	
+
 		#nav a
 		{
 			position: relative;
@@ -831,7 +825,7 @@
 			{
 				padding-right: 0;
 			}
-		
+
 /*********************************************************************************/
 /* Panels                                                                        */
 /*********************************************************************************/
@@ -848,11 +842,11 @@
 	}
 
 	/* Me */
-	
+
 		#me
 		{
 		}
-		
+
 			#me .pic
 			{
 				position: relative;
@@ -863,7 +857,7 @@
 					The pseudo element below applies a noise pattern to the "me" image. It's
 					meant to help mask blurriness, but you can remove it if you don't like it.
 				*/
-			
+
 				#me .pic:before
 				{
 					content: '';
@@ -876,6 +870,17 @@
 					z-index: 1;
 				}
 
+			#apps {
+				font-family: 'Roboto Slab', serif;
+				font-weight: 100;
+				color: #777;
+			}
+
+			#apps .pic {
+				 margin-left: auto;
+         margin-right: auto;
+    		 width: 6em
+			}
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
@@ -885,7 +890,7 @@
 		color: #ccc;
 		color: rgba(255,255,255,0.45);
 	}
-	
+
 		#footer a
 		{
 			color: #ddd;
@@ -896,7 +901,7 @@
 			-ms-transition: color .25s ease-in-out;
 			transition: color .25s ease-in-out;
 		}
-		
+
 		#footer a:hover
 		{
 			color: rgba(255,255,255,1.0);
