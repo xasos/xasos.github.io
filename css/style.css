@@ -63,8 +63,8 @@
 
 	body, input, textarea
 	{
-		font-family: 'Roboto Slab', serif;
-		font-weight: 300;
+		font-family: 'Roboto Slab', serif !important;
+		font-weight: 300 !important;
 		color: #777;
 	}
 
@@ -829,7 +829,16 @@
 /*********************************************************************************/
 /* Panels                                                                        */
 /*********************************************************************************/
+	.apps {
 
+	}
+
+	.web {
+
+	}
+	.project-header {
+		text-align: center;
+	}
 	#main
 	{
 		position: relative;
