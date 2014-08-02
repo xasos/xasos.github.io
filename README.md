@@ -1,4 +1,4 @@
 Niraj Pant
 ================
 
-This is my personal Website. Available at http://nirajpant.co.
+This is my personal website. Available at http://nirajpant.co.
