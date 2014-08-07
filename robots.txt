@@ -856,7 +856,4 @@ Disallow: /*q=
 Disallow: /*.atom
 Disallow: /login
 
-
 User-agent: *
-Disallow: /
-Allow: /humans.txt
