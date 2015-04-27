@@ -80,3 +80,8 @@ a {
 .Site-content--full::after {
   content: none;
 }
+
+.content {
+  width: 900px;
+  margin: auto;
+}
