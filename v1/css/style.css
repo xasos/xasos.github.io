@@ -1,25 +1,18 @@
-body {
-  border-top: 20px solid #FF9F24; /* #15c0df */
-  margin: 0;
-  padding: 0;
-  background-color: #FDFFFC;
-}
 h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #999999;
   padding: 9px 0 3px;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   text-align: center;
-  font-size: 400%; 
 }
 
 li {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
@@ -39,7 +32,7 @@ li {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
   color: #444;
@@ -51,7 +44,7 @@ a {
 }
 
 .description {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #111;
 }
