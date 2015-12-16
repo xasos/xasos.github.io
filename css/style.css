@@ -4,10 +4,11 @@ body {
   padding: 0;
   background-color: #FDFFFC;
 }
+
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #333;
   padding: 9px 0 3px;
 }
 
@@ -16,6 +17,17 @@ h1 {
   font-weight: 100;
   text-align: center;
   font-size: 400%; 
+}
+
+a {
+  border-bottom: 1px solid black !important;
+  color: #333;
+  text-decoration: none;
+  /* border-bottom: 1px solid #15c0df !important; */
+}
+
+a:hover {
+  color: #15c0df;
 }
 
 li {
@@ -43,11 +55,6 @@ p {
   font-weight: 400;
   text-align: center;
   color: #444;
-}
-
-a {
-  text-decoration: none;
-  color: #e74c3c;
 }
 
 .description {
