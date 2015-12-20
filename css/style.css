@@ -43,6 +43,10 @@ li {
   font-weight: 300;
 }
 
+#links {
+  font-weight: 300;
+}
+
 article {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -50,6 +54,8 @@ article {
 
 #subtitle {
   margin-top: 12px;
+  font-size: 110%;
+  font-weight: 300;
 }
 
 #name {
