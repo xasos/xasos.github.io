@@ -1,87 +1,114 @@
-<!doctype html>
 <html>
   <head>
-    <title>niraj dot io</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="UIUC student and developer in Champaign, IL" />
-    <!-- Add CSS Imports -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      /* h1:hover {
+        display: table;
+        margin: 0 auto;
+        font-family: "Avenir Next";
+        font-weight: 400;
+        font-size: 6em;
+        /* background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); */
+        /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) */
+        /* background: linear-gradient(to left, #4776E6, #8E54E9);*/
+        /* background: linear-gradient(to left, #1D976C, #93F9B9); */
+        /* background: linear-gradient(to bottom, #1A2980, #26D0CE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 200px;  
+      } */
 
-    <!-- Add JS Imports -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    
+      h1 {
+        /* display: table; */
+        margin: 0 auto;
+        font-family: "Avenir Next";
+        font-weight: 400;
+        letter-spacing: -2px;
+        font-size: 2.5em;
+        /* line-height: 200px;   */
+        color: #A49392;
+      }
+
+      h2 {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+      }
+
+      h3 {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 200;
+        font-size: 1.3em;
+        color: #888D92;
+        letter-spacing: 0.25px;
+        display: none;
+      }
+
+      .main {
+        margin: 30 80 30 80;
+      }
+
+      #book {
+        font-weight: 400;
+      }
+
+
+      a:hover {
+        color: white;
+      }
+
+      #author {
+        font-weight: 400;
+      }
+
+      /* span {
+        text-decoration: underline;
+      } */
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) {  }
+
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {  }
+
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {  }
+
+      /* Large desktop */
+      @media (min-width: 1200px) {  }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
   </head>
-  <body class="Site">
-    <main class="Site-content">
-    <div class="content">
-		<h1 id="name">niraj pant</h1>
-		<p id="subtitle">Hey! I'm Niraj, and I'm a freshman at the University of Illinois at Urbana-Champaign. I love building and learning about new technologies.</p>
-    <p id="links"><a href="mailto:hi@niraj.io">Email</a> - <a href="docs/pant-niraj-resume.pdf">Resume</a> - <a href="http://twitter.com/niraj">Twitter</a> - <a href="http://linkedin.com/in/nirajpant">LinkedIn</a> - <a href="http://github.com/xasos">GitHub</a> - <a href="http://medium.com/@nirajpant">Medium</a></p>
-
-    <h2>Projects</h2>
-    I love to work on side projects in my free time. Here are some things I have worked on:<br><br>
-      <ul>
-        <li><a href="http://github.com/xasos/LetsGit">LetsGit</a> is an accessible, cloud-based Git GUI client and code editor in the browser. Lets you easily code and collaborate from anywhere without needing to setup a new development environment.</li>
-        <li><a href="https://github.com/xasos/twitch-plays-tinder">Twitch Plays Tinder</a> is a web app that streams a port of Tinder onto twitch.tv and allows collaborative matchmaking on the platform. Originally inspired by Twitch Plays Pokémon.</li>
-        <li><a href="http://github.com/xasos/ScandIn">ScandIn</a> is a Google Glass application to enhance networking events using facial recognition. The Glass application takes a picture, sends it to an Express.js backend, matches the image to a user in the training set, and returns the recognized user's information to a Glass card.</li>
-        <li><a href="http://github.com/xasos/3DSnap">3DSnap</a> allows you to share and view stereoscopic 3D snapchats with a 3DS or mobile phone. </li>
-      </ul>
-
-    <h2>Work</h2>
-      <ul>
-        <li>Skycatch - San Francisco, CA<br>
-        Summer 2016</li>
-        <li>University of Illinois at Urbana-Champaign - Champaign, IL<br>
-        Spring 2016</li>
-        <li>Stanford HCI Group - Stanford, CA<br>
-        Summer/Fall 2015</li>
-        <li>Lookout - San Francisco, CA<br>
-        Summer 2015</li>
-        <li>ShipBob - Chicago, IL<br>
-        Fall 2014/Spring 2015</li>
-        <li>Besso Labs - Chicago, IL<br>
-        Summer 2014</li>
-      </ul>
-
-      <p id="moreWork">(A more complete work history can be found <a href="docs/pant-niraj-resume.pdf">here</a>)</p>
-
-    <h2>Contact</h2>
-
-    <article>Let's chat! I can be contacted at npant3@illinois.edu or <a href="https://twitter.com/niraj">@niraj</a> on twitter. Also, if you're in Champaign-Urbana, I'd love to grab coffee :)</article>
-    <br>
-    <h2>My Face</h2>
-    <!--<center><article>Oh yeah, this is what I look like.</article><br></center> -->
-    <img src="./img/profile.jpg" id="profile"></img>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-              (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-              m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      
-      ga('create', 'UA-53378136-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+<body>
+  <div class="main">
+    <h1>Niraj Pant</h1>
+    <h2>Hey! I'm Niraj, sophomore at UIUC. I'm interested in Design, HCI, and AI.</h2>
+    <img src="res/img/headshot.jpg" onload="this.width/=2;this.onload=null;">
+    <h2> Work</h2>
+    <h2 style="margin-top:40px;"> Projects</h2>
+    <h3 id="currentlyReading">I'm currently reading <a style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3>
   </div>
-    </main>
+<script>
+    var GOOD_READS_URL = "https://extraction.import.io/query/extractor/5f65c309-95d1-4415-a932-9422607aa6c8?_apikey=8b6631fd38bc4205adf8a7116b470ea51fa982655347e1656130872fcb714016d8b71f1f25474249aa6c560413735e4b7ea70244a8c980089ba42bcd73161383a65e85ef9963c8d43c66018713827d7b&url=https%3A%2F%2Fwww.goodreads.com%2Fuser%2Fshow%2F50694935-niraj-pant";
+    $.ajax({
+      url: GOOD_READS_URL,
+      cache: false,
+      success: function(html){
+        var book = html["extractorData"]["data"][0]["group"][3]["Updatebodyafterimageshort links"][0]["text"];
+        $("#book").append(book);
+        var author = html["extractorData"]["data"][0]["group"][3]["Updatebodyafterimageshort links"][1]["text"];
+        $("#author").append(author);
+        var readURL = html["extractorData"]["data"][0]["group"][3]["Nirajpant link"][0]["href"];
+        $("a").attr("href", readURL)
+        $("h3").show();
+      }
+    }); 
+  </script>
 
-    <footer class=Site-footer>
-      <div class=Footer>
-        <p>Created by <a href=http://niraj.io>Niraj Pant</a>.<p>☷ Old Versions: <a href="http://niraj.io/v0">v0</a> and <a href="http://niraj.io/v1">v1</a></div>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>
