@@ -1,4 +1,7 @@
 <html>
+<!-- Hey fellow web developer! This page is currently under development,
+     and all the source can be found on GitHub: https://github.com/xasos -->
+  <title>niraj dot io</title>
   <head>
     <style>
       /* h1:hover {
@@ -17,9 +20,13 @@
         line-height: 200px;  
       } */
 
+      html {
+        border-top: 5px solid #6E8BE0; /* #6E8BE0 #E0CE41 #5C246E #68D771 #A49392*/
+      }
+
       h1 {
         /* display: table; */
-        margin: 0 auto;
+        margin: 50 0 0 0;
         font-family: "Avenir Next";
         font-weight: 400;
         letter-spacing: -2px;
@@ -31,7 +38,7 @@
       h2 {
         margin: 0 auto;
         font-family: "BlinkMacSystemFont", sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.5em;
         color: #888D92;
         letter-spacing: -0.25px;
@@ -46,6 +53,39 @@
         color: #888D92;
         letter-spacing: 0.25px;
         display: none;
+        transition: all .3s ease 0s;
+      }
+
+      img {
+        float: left;
+        margin-right: 0.1em;
+      }
+        
+      li {
+        list-style-position: outside;
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        padding-left: 1.2em;
+        overflow: hidden;
+        list-style-type: none;
+      }
+
+      ol {
+        padding-left: 1.2em;
+        overflow: hidden;
+        list-style-type: circle;
+      }
+
+      #lastSeen {
+        clear: left;
       }
 
       .main {
@@ -57,8 +97,23 @@
       }
 
 
+      #state, #city, #place {
+        font-weight: 400;
+      }
+
+
       a:hover {
         color: white;
+      }
+
+      #deet {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
       }
 
       #author {
@@ -69,8 +124,32 @@
         text-decoration: underline;
       } */
 
+      /* span:after {
+        content:"\a";
+        white-space: pre;
+      } */
+
+      #footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+      }
+
+      .writing {
+        color: #6E8BE0;
+        text-decoration: none;
+      }
+
+      .writing:hover {
+        color: #3D5392;
+      }
+
       /* Landscape phones and down */
-      @media (max-width: 480px) {  }
+      @media (max-width: 480px) {
+        #headshot {
+          max-width: 95%;
+        }
+      }
 
       /* Landscape phone to portrait tablet */
       @media (max-width: 767px) {  }
@@ -88,13 +167,43 @@
   <div class="main">
     <h1>Niraj Pant</h1>
     <h2>Hey! I'm Niraj, sophomore at UIUC. I'm interested in Design, HCI, and AI.</h2>
-    <img src="res/img/headshot.jpg" onload="this.width/=2;this.onload=null;">
-    <h2> Work</h2>
-    <h2 style="margin-top:40px;"> Projects</h2>
-    <h3 id="currentlyReading">I'm currently reading <a style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3>
+    <img id="headshot" src="res/img/headshot.jpg" onload="this.width/=2;this.onload=null;">
+    <ul>
+      <li>Work<br>
+      <!-- <span id="deet">  Skycatch</span><br>
+      <span id="deet">  Lookout</span><br>
+        <span id="deet">  ShipBob</span>-->
+      <span id="deet">I'm currently a software engineering intern at <a class="writing" href="https://skycatch.com">Skycatch</a> in San Francisco. I'm also on the external council of <a class="writing" href="http://binarycap.com">Binary Capital</a>, a consumer seed-stage fund. Previously, I've worked on security products at <a class="writing" href="https://lookout.com">Lookout</a>, driver-side infrastructure at <a class="writing" href="http://shipbob.com">ShipBob</a>,
+        and social at Besso Labs. My resume can be found <a class="writing" href="/docs/pant-niraj-resume">here</a>.</span>
+      </li>
+      <li>Projects<br>
+      <span id="deet"><a class="writing" href="">LetsGit</a> is an accessible, cloud-based Git GUI client and code editor in the browser. Lets you easily code and collaborate from anywhere without needing to setup a new development environment.</span><br>
+      <span id="deet"><a class="writing" href="">Twitch Plays Tinder</a> is a web app that streams a port of Tinder onto twitch.tv and allows collaborative matchmaking on the platform. Originally inspired by Twitch Plays Pok&eacute;mon.</span><br>
+      <span id="deet"><a class="writing" href="">ScandIn</a> is a Google Glass application to enhance networking events using facial recognition. The Glass application takes a picture, sends it to an Express.js backend, matches the image to a user in the training set, and returns the recognized user's information to a Glass card.</span><br>
+      <span id="deet"><a class="writing" href="">3DSnap</a> allows you to share and view stereoscopic 3D snapchats with a 3DS or mobile phone.</span><br>
+      </li>
+      <li>Writing<br>
+      <span id="deet"><a class="writing" target="_blank" href="">The State of Podcasts in 2016 (and the opportunities ahead)</a> -- Coming Soon!</span><br>
+      <span id="deet"><a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/bay-intern-dine-out-e5122e59ad6a#.doww92dxo">Bay Intern Dine Out</a></span><br>
+      <span id="deet"><a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/2015-the-year-i-fell-in-love-with-reading-again-68c1e25e6eea#.3wfrlp7cl">2015, the year I fell in love with reading (again)</a></span><br>
+      </li>
+      <li>Contact<br>
+      <span id="deet">I currently live in San Francisco. Feel free to reach me on <a targe="_blank" class="writing" href="https://twitter.com/niraj">Twitter</a> or shoot me an <a  class="writing" href="mailto:hi@niraj.io">email</a> if you'd like to get coffee!</span>
+      </li>
+    </ul>
+    <!-- <h2 style="margin: block; ;"> Work</h2>-->
+    <!--<h2 style="margin-top:40px;"> Projects</h2>-->
+    <!-- <h2>Writing</h2>
+    <h2>Contact</h2> -->
+    <!-- <h3 id="currentlyReading">I'm currently reading <a style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3> -->
+  <div id="footer">
+    <h3 id="lastSeen">I was last at <a style="text-decoration: none; color:#888D92" target="_blank" id="4sq-place"><span id="place"></span> in <span id="city"></span>, <span id="state"></span>.</a></h3>
+  </div>
   </div>
 <script>
     var GOOD_READS_URL = "https://extraction.import.io/query/extractor/5f65c309-95d1-4415-a932-9422607aa6c8?_apikey=8b6631fd38bc4205adf8a7116b470ea51fa982655347e1656130872fcb714016d8b71f1f25474249aa6c560413735e4b7ea70244a8c980089ba42bcd73161383a65e85ef9963c8d43c66018713827d7b&url=https%3A%2F%2Fwww.goodreads.com%2Fuser%2Fshow%2F50694935-niraj-pant";
+    var MEDIUM_URL = "https://medium.com/making-new-things-and-thinking-about-them/latest?format=json";
+    var foursq_url = "https://api.foursquare.com/v2/users/self/checkins?oauth_token=ARBMLVT4UBACT1YB4IJWUCLYIE35M4HOGSMYIDMLTE3TOWQA&v=20160513";
     $.ajax({
       url: GOOD_READS_URL,
       cache: false,
@@ -104,7 +213,24 @@
         var author = html["extractorData"]["data"][0]["group"][3]["Updatebodyafterimageshort links"][1]["text"];
         $("#author").append(author);
         var readURL = html["extractorData"]["data"][0]["group"][3]["Nirajpant link"][0]["href"];
-        $("a").attr("href", readURL)
+        //$("a").attr("href", readURL)
+        $("h3").show();
+      }
+    }); 
+
+    $.ajax({
+      url: foursq_url,
+      cache: false,
+      success: function(html){
+        var city = html["response"]["checkins"]["items"][0]["venue"]["location"]["city"];
+        console.log(city);
+        $("#city").append(city);
+        var place = html["response"]["checkins"]["items"][0]["venue"]["name"];
+        $("#place").append(place);
+        var state = html["response"]["checkins"]["items"][0]["venue"]["location"]["state"];
+        $("#state").append(state);
+        var foursquareURL = "https://foursquare.com/venue/" + html["response"]["checkins"]["items"][0]["venue"]["id"];
+        $("#4sq-place").attr("href", foursquareURL);
         $("h3").show();
       }
     }); 
