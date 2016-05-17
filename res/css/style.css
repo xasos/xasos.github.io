@@ -1,0 +1,41 @@
+html {
+  border-top: 5px solid #6E8BE0; /* #6E8BE0 #E0CE41 #5C246E #68D771 #A49392*/
+}
+
+h1 {
+  /* display: table; */
+  margin: 50 0 0 0;
+  font-family: "Avenir Next";
+  font-weight: 400;
+  letter-spacing: -2px;
+  font-size: 2.5em;
+  color: #A49392;
+}
+
+h1:hover {
+        /* background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); */
+        background: linear-gradient(to left, #4776E6, #8E54E9);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; */
+      }
+
+      h2 {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+      }
+
+      h3 {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 200;
+        font-size: 1.3em;
+        color: #888D92;
+        letter-spacing: 0.25px;
+        display: none;
+        transition: all .3s ease 0s;
+      }

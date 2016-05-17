@@ -3,59 +3,9 @@
      and all the source can be found on GitHub: https://github.com/xasos -->
   <title>niraj dot io</title>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/css/style.css" type="text/css">
     <style>
-      /* h1:hover {
-        display: table;
-        margin: 0 auto;
-        font-family: "Avenir Next";
-        font-weight: 400;
-        font-size: 6em;
-        /* background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); */
-        /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) */
-        /* background: linear-gradient(to left, #4776E6, #8E54E9);*/
-        /* background: linear-gradient(to left, #1D976C, #93F9B9); */
-        /* background: linear-gradient(to bottom, #1A2980, #26D0CE);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 200px;  
-      } */
-
-      html {
-        border-top: 5px solid #6E8BE0; /* #6E8BE0 #E0CE41 #5C246E #68D771 #A49392*/
-      }
-
-      h1 {
-        /* display: table; */
-        margin: 50 0 0 0;
-        font-family: "Avenir Next";
-        font-weight: 400;
-        letter-spacing: -2px;
-        font-size: 2.5em;
-        /* line-height: 200px;   */
-        color: #A49392;
-      }
-
-      h2 {
-        margin: 0 auto;
-        font-family: "BlinkMacSystemFont", sans-serif;
-        font-weight: 400;
-        font-size: 1.5em;
-        color: #888D92;
-        letter-spacing: -0.25px;
-        margin-bottom: 40px;
-      }
-
-      h3 {
-        margin: 0 auto;
-        font-family: "BlinkMacSystemFont", sans-serif;
-        font-weight: 200;
-        font-size: 1.3em;
-        color: #888D92;
-        letter-spacing: 0.25px;
-        display: none;
-        transition: all .3s ease 0s;
-      }
-
       img {
         float: left;
         margin-right: 0.1em;
@@ -129,12 +79,6 @@
         white-space: pre;
       } */
 
-      #footer {
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-      }
-
       .writing {
         color: #6E8BE0;
         text-decoration: none;
@@ -142,6 +86,21 @@
 
       .writing:hover {
         color: #3D5392;
+      } 
+
+      i {
+        margin-left: 0.3em;
+        /* color: #888D92; */
+        color: rgba(0,0,0,.44);
+        cursor: pointer;
+        transition: linear 0.2s;
+          -moz-transition: linear 0.2s;
+          -webkit-transition: linear 0.2s;
+          -ms-transition: linear 0.2s;
+      }
+
+      i:hover {
+        color: black;
       }
 
       /* Landscape phones and down */
@@ -149,6 +108,10 @@
         #headshot {
           max-width: 95%;
         }
+
+        .main {
+          margin: 5 0 5 0;
+        } 
       }
 
       /* Landscape phone to portrait tablet */
@@ -165,22 +128,25 @@
   </head>
 <body>
   <div class="main">
-    <h1>Niraj Pant</h1>
+    <h1 style="display: inline-block">Niraj Pant</h1>
+    <div id="social-icons" style="display:inline;margin-left:0.7em;">
+      <a target="_blank" href="https://twitter.com/niraj"><i class="fa fa-twitter" style="font-size:1.7em;"></i></a>
+      <a target="_blank" href="https://medium.com/@nirajpant"><i class="fa fa-medium" style="font-size:1.7em;"></i></a>
+      <a target="_blank" href="https://behance.net/nirajpant"><i class="fa fa-behance" style="font-size: 1.7em;"></i></a>
+      <a target="_blank" href="mailto:hi@niraj.io"><i class="fa fa-envelope" style="font-size: 1.7em;"></i></a>
+    </div>
     <h2>Hey! I'm Niraj, sophomore at UIUC. I'm interested in Design, HCI, and AI.</h2>
     <img id="headshot" src="res/img/headshot.jpg" onload="this.width/=2;this.onload=null;">
     <ul>
       <li>Work<br>
-      <!-- <span id="deet">  Skycatch</span><br>
-      <span id="deet">  Lookout</span><br>
-        <span id="deet">  ShipBob</span>-->
       <span id="deet">I'm currently a software engineering intern at <a class="writing" href="https://skycatch.com">Skycatch</a> in San Francisco. I'm also on the external council of <a class="writing" href="http://binarycap.com">Binary Capital</a>, a consumer seed-stage fund. Previously, I've worked on security products at <a class="writing" href="https://lookout.com">Lookout</a>, driver-side infrastructure at <a class="writing" href="http://shipbob.com">ShipBob</a>,
-        and social at Besso Labs. My resume can be found <a class="writing" href="/docs/pant-niraj-resume">here</a>.</span>
+        and social at Besso Labs. My resume can be found <a class="writing" href="/docs/pant-niraj-resume.pdf">here</a>.</span>
       </li>
       <li>Projects<br>
-      <span id="deet"><a class="writing" href="">LetsGit</a> is an accessible, cloud-based Git GUI client and code editor in the browser. Lets you easily code and collaborate from anywhere without needing to setup a new development environment.</span><br>
-      <span id="deet"><a class="writing" href="">Twitch Plays Tinder</a> is a web app that streams a port of Tinder onto twitch.tv and allows collaborative matchmaking on the platform. Originally inspired by Twitch Plays Pok&eacute;mon.</span><br>
-      <span id="deet"><a class="writing" href="">ScandIn</a> is a Google Glass application to enhance networking events using facial recognition. The Glass application takes a picture, sends it to an Express.js backend, matches the image to a user in the training set, and returns the recognized user's information to a Glass card.</span><br>
-      <span id="deet"><a class="writing" href="">3DSnap</a> allows you to share and view stereoscopic 3D snapchats with a 3DS or mobile phone.</span><br>
+      <span id="deet" style="margin-bottom: 8px;"><a class="writing" href="https://github.com/xasos/LetsGit">LetsGit</a> is an accessible, cloud-based Git GUI client and code editor in the browser. Lets you easily code and collaborate from anywhere without needing to setup a new development environment.</span><br>
+      <span id="deet" style="margin-bottom: 8px;"><a class="writing" href="https://github.com/xasos/twitch-plays-tinder">Twitch Plays Tinder</a> is a web app that streams a port of Tinder onto twitch.tv and allows collaborative matchmaking on the platform. Originally inspired by Twitch Plays Pok&eacute;mon.</span><br>
+      <span id="deet" style="margin-bottom: 8px;"><a class="writing" href="https://github.com/xasos/ScandIn">ScandIn</a> is a Google Glass application to enhance networking events using facial recognition. The Glass application takes a picture, sends it to an Express.js backend, matches the image to a user in the training set, and returns the recognized user's information to a Glass card.</span><br>
+      <span id="deet"><a class="writing" href="https://github.com/xasos/3DSnap">3DSnap</a> allows you to share and view stereoscopic 3D snapchats with a 3DS or mobile phone.</span><br>
       </li>
       <li>Writing<br>
       <span id="deet"><a class="writing" target="_blank" href="">The State of Podcasts in 2016 (and the opportunities ahead)</a> -- Coming Soon!</span><br>
@@ -195,46 +161,68 @@
     <!--<h2 style="margin-top:40px;"> Projects</h2>-->
     <!-- <h2>Writing</h2>
     <h2>Contact</h2> -->
-    <!-- <h3 id="currentlyReading">I'm currently reading <a style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3> -->
-  <div id="footer">
-    <h3 id="lastSeen">I was last at <a style="text-decoration: none; color:#888D92" target="_blank" id="4sq-place"><span id="place"></span> in <span id="city"></span>, <span id="state"></span>.</a></h3>
+    <!-- <h3 id="currentlyReading">I'm currently reading <a id="goodreads" style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3> -->
   </div>
-  </div>
+
+<footer style="text-align:center" class="site-footer">
+  <!-- <h3 id="lastSeen">I was last at <a style="text-decoration: none; color:#888D92" target="_blank" id="4sq-place"><span id="place"></span> in <span id="city"></span>, <span id="state"></span>.</a></h3> -->
+    <h3 id="currentlyReading">I'm currently reading <a id="goodreads" style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3>
+</footer>
 <script>
-    var GOOD_READS_URL = "https://extraction.import.io/query/extractor/5f65c309-95d1-4415-a932-9422607aa6c8?_apikey=8b6631fd38bc4205adf8a7116b470ea51fa982655347e1656130872fcb714016d8b71f1f25474249aa6c560413735e4b7ea70244a8c980089ba42bcd73161383a65e85ef9963c8d43c66018713827d7b&url=https%3A%2F%2Fwww.goodreads.com%2Fuser%2Fshow%2F50694935-niraj-pant";
+    //var GOOD_READS_URL = "https://desolate-oasis-14049.herokuapp.com/";
+    var GOOD_READS_URL = "http://cors.io/?u=https://desolate-oasis-14049.herokuapp.com/";
     var MEDIUM_URL = "https://medium.com/making-new-things-and-thinking-about-them/latest?format=json";
     var foursq_url = "https://api.foursquare.com/v2/users/self/checkins?oauth_token=ARBMLVT4UBACT1YB4IJWUCLYIE35M4HOGSMYIDMLTE3TOWQA&v=20160513";
     $.ajax({
       url: GOOD_READS_URL,
       cache: false,
       success: function(html){
-        var book = html["extractorData"]["data"][0]["group"][3]["Updatebodyafterimageshort links"][0]["text"];
+        html = JSON.parse(html);
+        var book = html["book"];
         $("#book").append(book);
-        var author = html["extractorData"]["data"][0]["group"][3]["Updatebodyafterimageshort links"][1]["text"];
+        var author = html["author"];
         $("#author").append(author);
-        var readURL = html["extractorData"]["data"][0]["group"][3]["Nirajpant link"][0]["href"];
-        //$("a").attr("href", readURL)
+        var readURL = html["url"];
+        $("#goodreads").attr("href", readURL)
         $("h3").show();
+        $("#h3").css("text-align", "center");
       }
     }); 
 
-    $.ajax({
-      url: foursq_url,
-      cache: false,
-      success: function(html){
-        var city = html["response"]["checkins"]["items"][0]["venue"]["location"]["city"];
-        console.log(city);
-        $("#city").append(city);
-        var place = html["response"]["checkins"]["items"][0]["venue"]["name"];
-        $("#place").append(place);
-        var state = html["response"]["checkins"]["items"][0]["venue"]["location"]["state"];
-        $("#state").append(state);
-        var foursquareURL = "https://foursquare.com/venue/" + html["response"]["checkins"]["items"][0]["venue"]["id"];
-        $("#4sq-place").attr("href", foursquareURL);
-        $("h3").show();
-      }
-    }); 
+    //$.ajax({
+    //  url: foursq_url,
+    //  cache: false,
+    //  success: function(html){
+    //    var city = html["response"]["checkins"]["items"][0]["venue"]["location"]["city"];
+    //    console.log(city);
+    //    $("#city").append(city);
+    //    var place = html["response"]["checkins"]["items"][0]["venue"]["name"];
+    //    $("#place").append(place);
+    //    var state = html["response"]["checkins"]["items"][0]["venue"]["location"]["state"];
+    //    $("#state").append(state);
+    //    var foursquareURL = "https://foursquare.com/venue/" + html["response"]["checkins"]["items"][0]["venue"]["id"];
+    //    $("#4sq-place").attr("href", foursquareURL);
+    //    $("h3").show();
+    //  }
+    //}); 
   </script>
+
+<script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      
+      ga('create', 'UA-53378136-1', 'auto');
+      ga('send', 'pageview');
+</script>
 
 </body>
 </html>
