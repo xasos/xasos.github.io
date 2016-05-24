@@ -39,3 +39,166 @@ h1:hover {
         display: none;
         transition: all .3s ease 0s;
       }
+
+   img {
+        float: left;
+        margin-right: 0.1em;
+      }
+        
+      li {
+        list-style-position: outside;
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        padding-left: 1.2em;
+        overflow: hidden;
+        list-style-type: none;
+      }
+
+      ol {
+        padding-left: 1.2em;
+        overflow: hidden;
+        list-style-type: circle;
+      }
+
+#lastSeen {
+        clear: left;
+      }
+
+      .main {
+        margin: 30 80 30 80;
+      }
+
+      #book {
+        font-weight: 400;
+      }
+
+
+      #state, #city, #place {
+        font-weight: 400;
+      }
+
+
+      a:hover {
+        color: white;
+      }
+
+      #social-icons {
+        display: inline;
+        margin-left: 0.7em;
+      }
+
+
+      #deet {
+        margin: 0 auto;
+        font-family: "BlinkMacSystemFont", sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        color: #888D92;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+      }
+
+      #author {
+        font-weight: 400;
+      }
+
+      /* span {
+        text-decoration: underline;
+      } */
+
+      /* span:after {
+        content:"\a";
+        white-space: pre;
+      } */
+
+      .writing {
+        color: #6E8BE0;
+        text-decoration: none;
+      }
+
+      .writing:hover {
+        color: #3D5392;
+      } 
+
+      i {
+        margin-left: 0.3em;
+        /* color: #888D92; */
+        color: rgba(0,0,0,.44);
+        cursor: pointer;
+        transition: linear 0.2s;
+          -moz-transition: linear 0.2s;
+          -webkit-transition: linear 0.2s;
+          -ms-transition: linear 0.2s;
+      }
+
+      i:hover {
+        color: black;
+      }
+      
+      /* Landscape phones and down */
+      @media (max-width: 350px) {
+        ul {
+          float: left;
+        }
+
+        .main {
+          margin: 5 0 5 0;
+        } 
+        
+        #social-icons {
+          display: block;
+          margin-left: 0px;    
+        }
+      }
+      
+      /* Landscape phones and down */
+      @media (min-width: 350px) and (max-width: 480px) {
+        ul {
+          float: left;
+        }
+
+        .main {
+          margin: 5 0 5 0;
+        } 
+      }
+
+      /* Landscape phone to portrait tablet */
+
+      @media (max-width: 767px) { 
+        ul {
+          float: left;
+        }
+
+        .main {
+          margin: 5 0 5 0;
+        } 
+
+        #currentlyReading {
+          visibility: hidden;
+        }
+      }
+
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {  }
+
+      /* Large desktop */
+      @media (min-width: 1200px) { 
+        .main {
+          margin: 30 120 30 120;
+        }
+      }
+
+      /* Very large desktop */
+      @media (min-width: 1600px) { 
+        .main {
+          margin: 40 250 40 250;
+        }
+      }
