@@ -35,7 +35,7 @@ h3 {
   margin: 0 auto;
   font-family: "BlinkMacSystemFont", sans-serif;
   font-weight: 200;
-  font-size: 1.3em;
+  font-size: 1.0em;
   color: #888D92;
   letter-spacing: 0.25px;
   display: none;
@@ -60,6 +60,10 @@ li {
 
 #name {
   display: inline-block;
+}
+
+.em-zap {
+  font-size: 0.7em;
 }
 
 ul {
