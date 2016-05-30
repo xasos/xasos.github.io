@@ -177,6 +177,8 @@ i:hover {
 @media (max-width: 350px) {
   ul {
     float: left;
+    margin: 10 0 0 0;
+    padding: 0;
   }
 
   .main {
@@ -193,6 +195,8 @@ i:hover {
 @media (min-width: 350px) and (max-width: 480px) {
   ul {
     float: left;
+    margin: 10 0 0 0;
+    padding: 0;
   }
 
   .main {
@@ -204,6 +208,8 @@ i:hover {
 @media (max-width: 767px) {
   ul {
     float: left;
+    margin: 10 0 0 0;
+    padding: 0;
   }
 
   .main {
