@@ -54,7 +54,7 @@ li {
   font-weight: 400;
   font-size: 1.5em;
   color: #888D92;
-  letter-spacing: -0.25px;
+  letter-spacing: 0.3px;
   margin-bottom: 40px;
 }
 
@@ -80,6 +80,11 @@ ol {
 
 #projects {
   margin-bottom: 8px;
+}
+
+#site-url {
+  text-decoration: none;
+  color: #A49392;
 }
 
 .social {
