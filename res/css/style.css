@@ -23,7 +23,7 @@ h1:hover {
 
 h2 {
   margin: 0 auto;
-  font-family: "BlinkMacSystemFont", sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
   color: #888D92;
@@ -33,7 +33,7 @@ h2 {
 
 h3 {
   margin: 0 auto;
-  font-family: "BlinkMacSystemFont", sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
   font-weight: 200;
   font-size: 1.0em;
   color: #888D92;
@@ -50,7 +50,7 @@ img {
 li {
   list-style-position: outside;
   margin: 0 auto;
-  font-family: "BlinkMacSystemFont", sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: #888D92;
@@ -120,7 +120,7 @@ a:hover {
 
 #detail {
   margin: 0 auto;
-  font-family: "BlinkMacSystemFont", sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
   font-weight: 300;
   font-size: 0.8em;
   color: #888D92;
