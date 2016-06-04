@@ -193,6 +193,12 @@ i:hover {
     display: block;
     margin-left: 0px;
   }
+
+  #headshot {
+    float: none;
+    display:block;
+    margin:auto;
+  }
 }
 
 /* Landscape phones and down */
@@ -205,6 +211,12 @@ i:hover {
 
   .main {
     margin: 5 0 5 0;
+  }
+  
+  #headshot {
+    float: none;
+    display:block;
+    margin:auto;
   }
 }
 
