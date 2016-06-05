@@ -231,10 +231,6 @@ i:hover {
   .main {
     margin: 5 0 5 0;
   }
-
-  #currentlyReading {
-    visibility: hidden;
-  }
 }
 
 /* Portrait tablet to landscape and desktop */
