@@ -48,7 +48,7 @@
         <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/2015-the-year-i-fell-in-love-with-reading-again-68c1e25e6eea#.3wfrlp7cl">2015, the year I fell in love with reading (again)</a></span><br>
       </li>
       <li>Contact<br>
-      <span id="detail">I currently live in San Francisco. Feel free to reach me on <a target="_blank" class="writing" href="https://twitter.com/niraj">Twitter</a> or shoot me an <a class="writing" target="_blank" href="mailto:hi@niraj.io">email</a> if you'd like to get coffee!</span>
+      <span id="detail">I currently live in <span id="weather">rainy</span> Champaign-Urbana. Feel free to reach me on <a target="_blank" class="writing" href="https://twitter.com/niraj">Twitter</a> or shoot me an <a class="writing" target="_blank" href="mailto:hi@niraj.io">email</a> if you'd like to get coffee!</span>
       </li>
     </ul>
   </div>
@@ -57,6 +57,24 @@
 <h3 id="lastSeen"><a target="_blank" href="https://foursquare.com/niraj"><i class="em em-zap"></i></a> I was last at <a target="_blank" id="foursquare-place"><span id="place"></span> <span id="supportingText">in</span> <span id="city"></span>, <span id="state"></span>.</a></h3>
     <!-- <h3 id="currentlyReading">I'm currently reading <a id="goodreads" style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3> -->
 </footer>
+<script>
+  (function(){
+    var words = [
+        'rainy',
+        'cold',
+        'sunny',
+        'windy',
+        'humid',
+        'stormy',
+        'cloudy',
+        'foggy'
+        ], i = 0;
+    setInterval(function(){
+        $('#weather').fadeOut(function(){
+            $(this).html(words[i=(i+1)%words.length]).fadeIn();
+        });
+    }, 2000);
+</script>
 <script>
     //var GOOD_READS_URL = "https://desolate-oasis-14049.herokuapp.com/";
     // var GOOD_READS_URL = "http://cors.io/?u=https://desolate-oasis-14049.herokuapp.com/";
