@@ -1,5 +1,5 @@
 html {
-  border-top: 5px solid #6E8BE0;
+  border-top: 10px solid #6E8BE0;
     /* #6E8BE0 #E0CE41 #5C246E #68D771 #A49392 #6EE0A1 #3CBEFF*/;
 }
 
@@ -142,6 +142,7 @@ a:hover {
   color: #888D92;
   letter-spacing: -0.25px;
   margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 #footer {
@@ -228,7 +229,7 @@ i:hover {
   .main {
     margin: 5 0 5 0;
   }
-  
+
   #headshot {
     float: none;
     display:block;
