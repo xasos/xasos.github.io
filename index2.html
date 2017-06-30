@@ -8,8 +8,80 @@
   <meta name="ROBOTS" content="INDEX,FOLLOW">
 
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#show-more').click(function(){
+		$('#article-expand').show();
+		//$(this).hide();
+    $(this).closest('li').remove();
+	});
+});
+</script>
 
 <style>
+#writing:target {
+    background-color: #FDFD96;
+    animation: fadeout 2s forwards;
+    animation-delay: 2s;
+    -moz-animation: fadeout 2s forwards;
+    -moz-animation-delay: 2s;
+    -webkit-animation: fadeout 2s forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation: fadeout 2s forwards;
+    -o-animation-delay: 2s;
+}
+
+@keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+
+}
+@-moz-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+@-webkit-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+@-o-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+
+a:link{
+  color:blue;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:orange;
+}
+a:focus{
+  color:green;
+}
+a:active{
+  color:red;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+#article-expand {
+	display: none;
+}
+
 .title {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -86,25 +158,37 @@
 <div class="section bio">
 Hello! I’m Niraj, sophomore in computer science at the University
 of Illinois at Urbana-Champaign. I love to read, write, play soccer,
-and build things. Currently, I’m a research intern at the National
-Center for Supercomputing Applications and Student Partner at
+and build things. Currently, I’m a researcher in the <a href="http://decentralize.ece.illinois.edu/">Decentralized Systems Lab</a> at UIUC and a Student Partner at
 Binary Capital.<br><br>
 
-I'm interested in quantum computing, the internet, books, cities, physics, and robots.
+I'm interested in quantum computing, the internet, design, books, cities, physics, and bitcoin.
 
 <br><br>Please reach out! Always happy to meet new people. I can be contacted
-through <a href="https://twitter.com/niraj" target="_blank">twitter</a> or by <a href="mailto:nirajpant7@gmail.com">email</a>.
+through <a href="https://twitter.com/niraj" target="_blank">twitter</a> or by <a href="mailto:nirajpant7@gmail.com">email</a>. I also run the Decentralized Weekly newsletter series. Subscribe here!
+
+<br><br><i>“The only way to predict the future is to create it.”</i>
 </div>
 
-<div class="section writing">
-  <b>Writing</b>
-<ul class="writing-list">
-  <li><a href="http://blog.niraj.io/the-commoditization-of-machine-learning" target="_blank">The Commoditization of Machine Learning</a>
-  <li><a href="http://blog.niraj.io/the-ecosystem-effect" target="_blank">The Ecosystem Effect</a>
-  <li><a href="https://medium.com/the-mission/student-venture-capital-programs-47cf3537b2fe#.wbzqcg11a" target="_blank">Student Venture Capital Programs</a>
-  <li><a href="https://medium.com/making-new-things-and-thinking-about-them/analyzing-the-podcast-renaissance-24b5301720f#.4j90x4qlq" target="_blank">Analyzing The Podcast Renaissance</a>
-</ul>
-</div>
+	<div class="section writing" id="writing">
+	  <b>Writing</b>
+		<ul class="writing-list">
+		  <li><a href="http://blog.niraj.io/the-commoditization-of-machine-learning" target="_blank">The Commoditization of Machine Learning</a>
+		  <li><a href="http://blog.niraj.io/the-ecosystem-effect" target="_blank">The Ecosystem Effect</a>
+		  <li><a href="https://medium.com/the-mission/student-venture-capital-programs-47cf3537b2fe#.wbzqcg11a" target="_blank">Student Venture Capital Programs</a>
+		  <li><a href="https://medium.com/making-new-things-and-thinking-about-them/analyzing-the-podcast-renaissance-24b5301720f#.4j90x4qlq" target="_blank">Analyzing The Podcast Renaissance</a>
+      <li><a href="" id="show-more">Show more</a>
+		</ul>
+		<div id="article-expand">
+		<ul class="writing-list">
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/fermi-problems-5bb4d90cb949#.6hwku1n4j" target="_blank">Why I Love Fermi Problems</a>
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/bay-intern-dine-out-e5122e59ad6a#.4duauyvk6" target="_blank">Bay Intern Dine Out</a>
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/2015-the-year-i-fell-in-love-with-reading-again-68c1e25e6eea#.urv43hox0" target="_blank">2015, the year I fell in love with reading (again)</a>
+		</ul>
+		</div>
+	</div>
+  <div class="section other" id="other">
+    <b>Other Stuff</b>
   </div>
+</div>
 </body>
 </html>
