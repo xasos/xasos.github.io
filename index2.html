@@ -4,20 +4,24 @@
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Hey! I'm Niraj, and I'm a junior at the University of Illinois at Urbana-Champaign. I'm interested in Design, HCI, and AI.">
+  <meta name="description" content="Hey! I'm Niraj, and I'm a junior at the University of Illinois at Urbana-Champaign. I'm interested in Distributed Systems, Bitcoin, and Design.">
   <meta name="ROBOTS" content="INDEX,FOLLOW">
 
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
 
 <script>
-$(document).ready(function(){
-	$('#show-more').click(function(){
-		$('#article-expand').show();
-		//$(this).hide();
-    $(this).closest('li').remove();
-	});
-});
+function show() {
+    document.getElementById("show-more").style.display = "none";
+    document.getElementById("article-expand").style.display = "block";
+    var elem = document.getElementById('show-more-list');
+    elem.parentNode.removeChild(elem);
+}
+
+function hide() {
+    document.getElementById("show-more").style.display = "block";
+    document.getElementById("article-expand").style.display = "none";
+}
+
 </script>
 
 <style>
@@ -64,9 +68,9 @@ a:visited{
 a:hover{
   color:orange;
 }
-a:focus{
+/* a:focus{
   color:green;
-}
+} */
 a:active{
   color:red;
 }
@@ -158,8 +162,7 @@ a:active{
 <div class="section bio">
 Hello! I’m Niraj, junior in computer science at the University
 of Illinois at Urbana-Champaign. I love to read, write, play soccer,
-and build things. Currently, I’m an intern at <a href="http://ripple.com">Ripple Labs</a>, researcher in the <a href="http://decentralize.ece.illinois.edu/">Decentralized Systems Lab</a> at UIUC, and a campus ambassador at
-Sequoia Capital.<br><br>
+and build things. Currently, I’m an intern at <a href="http://ripple.com">Ripple Labs</a>, researcher in the <a href="http://decentralize.ece.illinois.edu/">Decentralized Systems Lab</a> at UIUC, and a campus ambassador at <a href="https://www.sequoiacap.com" target="_blank">Sequoia Capital</a>.<br><br>
 
 I'm interested in quantum computing, the internet, design, books, cities, physics, and bitcoin.
 
@@ -176,7 +179,7 @@ through <a href="https://twitter.com/niraj" target="_blank">twitter</a> or by <a
 		  <li><a href="http://blog.niraj.io/the-ecosystem-effect" target="_blank">The Ecosystem Effect</a>
 		  <li><a href="https://medium.com/the-mission/student-venture-capital-programs-47cf3537b2fe#.wbzqcg11a" target="_blank">Student Venture Capital Programs</a>
 		  <li><a href="https://medium.com/making-new-things-and-thinking-about-them/analyzing-the-podcast-renaissance-24b5301720f#.4j90x4qlq" target="_blank">Analyzing The Podcast Renaissance</a>
-      <li><a href="" id="show-more">Show more</a>
+      <li class="show-more-list"><a href="#" id="show-more" onclick="show()">Show more</a>
 		</ul>
 		<div id="article-expand">
 		<ul class="writing-list">
@@ -187,8 +190,10 @@ through <a href="https://twitter.com/niraj" target="_blank">twitter</a> or by <a
 		</div>
 	</div>
   <div class="section other" id="other">
-    <b>Other Stuff</b><br><br>
-    <a href="https://twitter.com/niraj">niraj</a> on Twitter, <a href="https://github.com/xasos">xasos</a> on GitHub, <a href="http://niraj.io/docs/key.txt">public key</a>
+    <b>Contact/Other Stuff</b><br><br>
+    <a href="https://twitter.com/niraj" target="_blank">niraj</a> on Twitter, <a href="https://github.com/xasos" target="_blank">xasos</a> on GitHub, <a href="mailto:hi@niraj.io" target="_blank">email</a>, <a href="http://niraj.io/docs/key.txt" target="_blank">public key</a>
+    <!--<br>
+    <a href="" target="_blank">My favorite books</a>-->
   </div>
 </div>
 </body>
