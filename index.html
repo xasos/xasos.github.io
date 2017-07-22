@@ -1,129 +1,203 @@
-<html lang="en">
+<html>
 <head>
   <title>Niraj Pant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Hey! I'm Niraj, and I'm a sophomore at the University of Illinois at Urbana-Champaign. I'm interested in Design, HCI, and AI.">
+  <meta name="description" content="Hey! I'm Niraj, and I'm a junior at the University of Illinois at Urbana-Champaign. I'm interested in Distributed Systems, Bitcoin, and Design.">
   <meta name="ROBOTS" content="INDEX,FOLLOW">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link rel="stylesheet" href="res/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+<script>
+function show() {
+    document.getElementById("show-more").style.display = "none";
+    document.getElementById("article-expand").style.display = "block";
+    var elem = document.getElementById('show-more-list');
+    elem.parentNode.removeChild(elem);
+}
+
+function hide() {
+    document.getElementById("show-more").style.display = "block";
+    document.getElementById("article-expand").style.display = "none";
+}
+
+</script>
+
+<style>
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#writing:target {
+    background-color: #FDFD96;
+    animation: fadeout 2s forwards;
+    animation-delay: 2s;
+    -moz-animation: fadeout 2s forwards;
+    -moz-animation-delay: 2s;
+    -webkit-animation: fadeout 2s forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation: fadeout 2s forwards;
+    -o-animation-delay: 2s;
+}
+
+@keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+
+}
+@-moz-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+@-webkit-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+@-o-keyframes fadeout {
+    to {
+        background-color: #fff;
+    }
+}
+
+a:link{
+  color:blue;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:orange;
+}
+/* a:focus{
+  color:green;
+} */
+a:active{
+  color:red;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+#article-expand {
+	display: none;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.125em;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.content {
+  margin-left: 200px;
+  width: 500px;
+}
+
+.writing-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+	.content {
+		margin-left: 0px;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 90%;
+	}
+}
+
+/* Landscape phones and down */
+@media (min-width: 350px) and (max-width: 480px) {
+	.content {
+		margin-left: 0px;
+    max-width: 350px;
+    margin: 0 auto;
+    width: 90%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.content {
+		margin-left: 0px;
+    margin: 0 auto;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Very large desktop */
+@media (min-width: 1600px) {
+
+}
+</style>
 </head>
 <body>
-  <div class="main">
-    <h1 id="name"><a id="site-url" href="http://niraj.io">Niraj Pant</a></h1>
-    <div id="social-icons">
-      <a target="_blank" href="https://twitter.com/niraj"><i class="fa fa-twitter social"></i></a>
-      <a target="_blank" href="https://medium.com/@nirajpant"><i class="fa fa-medium social"></i></a>
-<!--       <a target="_blank" href="https://behance.net/nirajpant"><i class="fa fa-behance social"></i></a> -->
-      <a target="_blank" href="https://github.com/xasos"><i class="fa fa-github-alt social"></i></a>
-      <a target="_blank" href="mailto:hi@niraj.io"><i class="fa fa-envelope social"></i></a>
-    </div>
+<div class="content">
+<div class="title">
+🤖  Niraj Pant
+</div>
 
-    <h2>Hey! I'm Niraj, sophomore at UIUC. I'm interested in Design, HCI, and AI.</h2>
-    <img id="headshot" src="res/img/headshot.jpg" onload="this.width/=2;this.onload=null;">
-    <ul>
-      <li>Work<br>
-        <span id="detail" style="margin-left: 0px !important;">I'm currently a research intern at the <a class="writing" target="_blank" href="http://ncsa.illinois.edu">National Center for Supercomputing Applications</a>.
-        I'm also on the external council of <a class="writing" target="_blank" href="http://binarycap.com">Binary Capital</a>, a consumer seed-stage fund.
-        Previously, I've worked on aerial imagery infrastructure at <a class="writing" target="_blank" href="https://skycatch.com">Skycatch</a>, security products at <a class="writing" target="_blank" href="https://lookout.com">Lookout</a>, driver-side infrastructure at <a class="writing" target="_blank" href="http://shipbob.com">ShipBob</a>,
-        and social products at Besso Labs. I've also helped contribute to research at <a class="writing" target="_blank" href="http://electionanalytics.cs.illinois.edu">Election Analytics @ Illinois</a> and
-        <a class="writing" target="_blank" href="https://hci.stanford.edu">Stanford HCI Group</a>. My resume can be found <a class="writing" target="_blank" href="/docs/pant-niraj-resume.pdf">here</a>.</span>
-      </li>
-      <li>Projects<br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://github.com/xasos/LetsGit">LetsGit</a> is an accessible, cloud-based Git GUI client and code editor in the browser. Lets you easily code and collaborate from anywhere without needing to setup a new development environment.</span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://github.com/xasos/twitch-plays-tinder">Twitch Plays Tinder</a> is a web app that streams a port of Tinder onto twitch.tv and allows collaborative matchmaking on the platform. Originally inspired by Twitch Plays Pok&eacute;mon.</span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://github.com/xasos/ScandIn">ScandIn</a> is a Google Glass application to enhance networking events using facial recognition. The Glass application takes a picture, sends it to an Express.js backend, matches the image to a user in the training set, and returns the recognized user's information to a Glass card.</span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://github.com/xasos/3DSnap">3DSnap</a> allows you to share and view stereoscopic 3D snapchats with a 3DS or mobile phone.</span><br>
-      </li>
-      <li>Writing<br><!-- <span id="coming-soon">Coming soon!</span></span> -->
-        <span id="detail">- <a class="writing" target="_blank" href="http://blog.niraj.io/the-commoditization-of-machine-learning">The Commoditization of Machine Learning</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="http://blog.niraj.io/the-ecosystem-effect">The Ecosystem Effect</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/the-mission/student-venture-capital-programs-47cf3537b2fe#.wbzqcg11a">Student Venture Capital Programs</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/analyzing-the-podcast-renaissance-24b5301720f#.4j90x4qlq">Analyzing The Podcast Renaissance</a><a class="writing" target="_blank" href="https://medium.com/the-mission/analyzing-the-podcast-renaissance-fddeefc3147c#.ckxv66b0g"> [mirror]</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/fermi-problems-5bb4d90cb949">Why I Love Fermi Problems</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/bay-intern-dine-out-e5122e59ad6a#.doww92dxo">Bay Intern Dine Out</a></span><br>
-        <span id="detail">- <a class="writing" target="_blank" href="https://medium.com/making-new-things-and-thinking-about-them/2015-the-year-i-fell-in-love-with-reading-again-68c1e25e6eea#.3wfrlp7cl">2015, the year I fell in love with reading (again)</a><a class="writing" target="_blank" href="https://www.linkedin.com/pulse/2015-year-i-fell-love-reading-again-niraj-pant?trk=prof-post"> [mirror]</a></span><br>
-        <span id="detail" style="margin-left:0px !important;margin-top:10px !important;">(I also publish my partially-thought-out observations, opinions, and notes <a class="writing" target="_blank" href="http://blog.niraj.io/">here</a>)</span><br>
-      </li>
-      <li>Contact<br>
-      <span id="detail" style="margin-left: 0px !important;">Please reach out! Always happy to meet new people. I can be contacted through <a target="_blank" class="writing" href="https://twitter.com/niraj">Twitter</a> or by <a class="writing" target="_blank" href="mailto:hi@niraj.io">email</a>.</span>
-      <!-- <span id="weather">rainy</span>-->
-      </li>
-    </ul>
+<div class="section bio">
+Hello! I’m Niraj, junior in computer science at the University
+of Illinois at Urbana-Champaign. I love to read, write, play soccer,
+and build things. Currently, I’m an intern at <a href="http://ripple.com">Ripple Labs</a>, researcher in the <a href="http://decentralize.ece.illinois.edu/">Decentralized Systems Lab</a> at UIUC, and a campus ambassador at <a href="https://www.sequoiacap.com" target="_blank">Sequoia Capital</a>.<br><br>
+
+I'm interested in quantum computing, the internet, design, books, cities, physics, and bitcoin.
+
+<br><br>Please reach out! Always happy to meet new people. I can be contacted
+through <a href="https://twitter.com/niraj" target="_blank">twitter</a> or by <a href="mailto:nirajpant7@gmail.com">email</a>. I also run the Decentralized Weekly newsletter series. Subscribe here!
+
+<br><br><i>“The only way to predict the future is to invent it.”</i>
+</div>
+
+	<div class="section writing" id="writing">
+	  <b>Writing</b>
+		<ul class="writing-list">
+		  <li><a href="http://blog.niraj.io/the-commoditization-of-machine-learning" target="_blank">The Commoditization of Machine Learning</a>
+		  <li><a href="http://blog.niraj.io/the-ecosystem-effect" target="_blank">The Ecosystem Effect</a>
+		  <li><a href="https://medium.com/the-mission/student-venture-capital-programs-47cf3537b2fe" target="_blank">Student Venture Capital Programs</a>
+		  <li><a href="https://medium.com/the-mission/analyzing-the-podcast-renaissance-fddeefc3147c" target="_blank">Analyzing The Podcast Renaissance</a>
+      <li class="show-more-list"><a href="#" id="show-more" onclick="show()">Show more</a>
+		</ul>
+		<div id="article-expand">
+		<ul class="writing-list">
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/fermi-problems-5bb4d90cb949" target="_blank">Why I Love Fermi Problems</a>
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/bay-intern-dine-out-e5122e59ad6a" target="_blank">Bay Intern Dine Out</a>
+			<li><a href="https://medium.com/making-new-things-and-thinking-about-them/2015-the-year-i-fell-in-love-with-reading-again-68c1e25e6eea" target="_blank">2015, the year I fell in love with reading (again)</a>
+		</ul>
+		</div>
+	</div>
+  <div class="section other" id="other">
+    <b>Contact/Other Stuff</b><br><br>
+    <a href="https://twitter.com/niraj" target="_blank">niraj</a> on Twitter, <a href="https://github.com/xasos" target="_blank">xasos</a> on GitHub, <a href="mailto:hi@niraj.io" target="_blank">email</a>, <a href="http://niraj.io/docs/key.txt" target="_blank">public key</a>
+    <!--<br>
+    <a href="" target="_blank">My favorite books</a>-->
   </div>
-
-<footer id="footer">
-<h3 id="lastSeen"><a target="_blank" href="https://foursquare.com/niraj"><i class="em em-zap"></i></a> I was last at <a target="_blank" id="foursquare-place"><span id="place"></span> <span id="supportingText">in</span> <span id="city"></span>, <span id="state"></span>.</a></h3>
-    <!-- <h3 id="currentlyReading">I'm currently reading <a id="goodreads" style="text-decoration: none; color:#888D92"><span id="book"></span> by <span id="author"></span></a>.</h3> -->
-</footer>
-<!--<script>-->
-<!--  (function(){-->
-<!--    var words = [-->
-<!--        'rainy',-->
-<!--        'cold',-->
-<!--        'sunny',-->
-<!--        'windy',-->
-<!--        'humid',-->
-<!--        'stormy',-->
-<!--        'cloudy',-->
-<!--        'foggy'-->
-<!--        ], i = 0;-->
-<!--    setInterval(function(){-->
-<!--        $('#weather').fadeOut(function(){-->
-<!--            $(this).html(words[i=(i+1)%words.length]).fadeIn();-->
-<!--        });-->
-<!--    }, 2000);-->
-<!--</script>-->
-<script>
-    //var GOOD_READS_URL = "https://desolate-oasis-14049.herokuapp.com/";
-    // var GOOD_READS_URL = "http://cors.io/?u=https://desolate-oasis-14049.herokuapp.com/";
-    var foursq_url = "https://api.foursquare.com/v2/users/self/checkins?oauth_token=ARBMLVT4UBACT1YB4IJWUCLYIE35M4HOGSMYIDMLTE3TOWQA&v=20160513";
-    // $.ajax({
-    //   url: GOOD_READS_URL,
-    //   cache: false,
-    //   success: function(html){
-    //     html = JSON.parse(html);
-    //     var book = html["book"];
-    //     $("#book").append(book);
-    //     var author = html["author"];
-    //     $("#author").append(author);
-    //     var readURL = html["url"];
-    //     $("#goodreads").attr("href", readURL)
-    //     // $("h3").show();
-    //     $("#h3").css("text-align", "center");
-    //   }
-    // });
-
-    $.ajax({
-     url: foursq_url,
-     cache: false,
-     success: function(html){
-       var city = html["response"]["checkins"]["items"][0]["venue"]["location"]["city"];
-       $("#city").append(city);
-       var place = html["response"]["checkins"]["items"][0]["venue"]["name"];
-       $("#place").append(place);
-       var state = html["response"]["checkins"]["items"][0]["venue"]["location"]["state"];
-       $("#state").append(state);
-       var foursquareURL = "https://foursquare.com/venue/" + html["response"]["checkins"]["items"][0]["venue"]["id"];
-       $("#foursquare-place").attr("href", foursquareURL);
-       $("h3").show();
-     }
-    });
-  </script>
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53378136-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+</div>
 </body>
 </html>
