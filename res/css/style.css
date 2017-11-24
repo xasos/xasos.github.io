@@ -60,6 +60,7 @@ a:active {
     margin-bottom: 40px;
     font-size: 1.125em;
     font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', sans-serif;
 }
 .section {
     margin-bottom: 30px;
