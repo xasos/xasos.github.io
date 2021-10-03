@@ -34,16 +34,16 @@ body {
     }
 }
 a:link {
-    color: blue;
+    color: #1434A4;
 }
 a:visited {
-    color: blue;
+    color: #000080;
 }
 a:hover {
-    color: red;
+    color: #000080;
 }
 a:active {
-    color: red;
+    color: #000080;
 }
 ::selection {
     background: #ffb7b7;
