@@ -1,5 +1,6 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 24px;
 }
 #writing:target {
     background-color: #FDFD96;
