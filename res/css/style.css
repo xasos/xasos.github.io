@@ -46,11 +46,11 @@ a:active {
     color: #000080;
 }
 ::selection {
-    background: #ffb7b7;
+    background: #ff8000;
     /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    background: #ffb7b7;
+    background: #ff8000;
     /* Gecko Browsers */
 }
 #article-expand {
