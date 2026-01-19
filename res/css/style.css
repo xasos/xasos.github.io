@@ -58,13 +58,16 @@ a:active {
 }
 .title {
     margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 1.125em;
+    margin-bottom: 0;
+    font-size: 1.8em;
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', sans-serif;
 }
 .section {
     margin-bottom: 30px;
+}
+.section.bio {
+    margin-top: 40px;
 }
 .content {
     margin-top: 100px;
@@ -76,40 +79,19 @@ a:active {
     list-style: none;
     padding-left: 0;
 }
-
-/* Landscape phones and down */
-@media (max-width: 350px) {
-    .content {
-        margin-left: 0px;
-        max-width: 300px;
-        margin: 0 auto;
-        width: 90%;
-    }
+.section.other .links {
+    margin-top: 12px;
 }
 
-/* Landscape phones and down */
-@media (min-width: 350px) and (max-width: 480px) {
-    .content {
-        margin-left: 0px;
-        max-width: 350px;
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-
-/* Landscape phone to portrait tablet */
+/* Mobile and tablet */
 @media (max-width: 767px) {
     .content {
-        margin-left: 0px;
-        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 500px;
+        padding: 0 20px;
     }
 }
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {}
-
-/* Large desktop */
-@media (min-width: 1200px) {}
-
-/* Very large desktop */
-@media (min-width: 1600px) {}
