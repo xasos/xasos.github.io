@@ -1,6 +1,6 @@
 body {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Times New Roman', Times, serif;
-    line-height: 24px;
+    line-height: 1.5;
 }
 a:link {
     color: #1434A4;
@@ -12,43 +12,38 @@ a:active {
 }
 ::selection {
     background: #ffb84d;
-    /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
     background: #ffb84d;
-    /* Gecko Browsers */
 }
 .title {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     margin-bottom: 0;
     font-size: 1.8em;
     font-weight: bold;
 }
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .section.bio {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 .content {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    width: 500px;
-}
-.section.other .links {
-    margin-top: 12px;
+    margin-top: clamp(3.75rem, 8vw, 6.25rem);
+    margin-bottom: clamp(3.75rem, 8vw, 6.25rem);
+    margin-left: 0;
+    margin-right: auto;
+    width: min(90%, 500px);
+    padding: 0 1.25rem;
 }
 
-/* Mobile and tablet */
-@media (max-width: 767px) {
+@media (min-width: 768px) {
     .content {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        width: 90%;
-        max-width: 500px;
-        padding: 0 20px;
+        margin-left: 6.25rem;
+        padding: 0;
     }
 }
+.section.other .links {
+    margin-top: 0.75rem;
+}
+
