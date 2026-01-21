@@ -1,67 +1,28 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Times New Roman', Times, serif;
     line-height: 24px;
-}
-#writing:target {
-    background-color: #FDFD96;
-    animation: fadeout 2s forwards;
-    animation-delay: 2s;
-    -moz-animation: fadeout 2s forwards;
-    -moz-animation-delay: 2s;
-    -webkit-animation: fadeout 2s forwards;
-    -webkit-animation-delay: 2s;
-    -o-animation: fadeout 2s forwards;
-    -o-animation-delay: 2s;
-}
-@keyframes fadeout {
-    to {
-        background-color: #fff;
-    }
-}
-@-moz-keyframes fadeout {
-    to {
-        background-color: #fff;
-    }
-}
-@-webkit-keyframes fadeout {
-    to {
-        background-color: #fff;
-    }
-}
-@-o-keyframes fadeout {
-    to {
-        background-color: #fff;
-    }
 }
 a:link {
     color: #1434A4;
 }
-a:visited {
-    color: #000080;
-}
-a:hover {
-    color: #000080;
-}
+a:visited,
+a:hover,
 a:active {
     color: #000080;
 }
 ::selection {
-    background: #fff9c4;
+    background: #ffb84d;
     /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    background: #fff9c4;
+    background: #ffb84d;
     /* Gecko Browsers */
-}
-#article-expand {
-    display: none;
 }
 .title {
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 1.8em;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', sans-serif;
 }
 .section {
     margin-bottom: 30px;
@@ -74,10 +35,6 @@ a:active {
     margin-bottom: 100px;
     margin-left: 100px;
     width: 500px;
-}
-.writing-list {
-    list-style: none;
-    padding-left: 0;
 }
 .section.other .links {
     margin-top: 12px;
